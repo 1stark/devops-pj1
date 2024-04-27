@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build Frontend') {
+            steps {
+                sh 'docker build -t frontend-app:latest .'
+            }
+        }
+        stage('Build Backend') {
+            steps {
+                sh 'docker build -t backend-app:latest .'
+            }
+        }
+        stage('Deploy to Kubernetes') {
+            steps {
+                sh 'helm install frontend ./charts/frontend'
+                sh 'helm install backend ./charts/backend'
+            }
+        }
+    }
+}
