@@ -55,11 +55,6 @@ Conclusion
 This project covers the entire DevOps lifecycle from development to deployment, integrating various tools and technologies commonly used in modern DevOps practices. It emphasizes automation, scalability, and reliability in software development and deployment workflows.
 
 
-User
-please write codes for me
-ChatGPT
-Certainly! I'll provide simplified code snippets for each component of the DevOps project, focusing on key parts to illustrate the process. Keep in mind that these are snippets and may need adjustments based on your specific project structure and requirements.
-
 Frontend Application (index.html)
 html
 Copy code
